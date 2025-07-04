@@ -1,10 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Website BRO</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delivery Dashboard</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f7f9fc;
+    }
+    .dashboard-header {
+      text-align: center;
+      padding: 20px;
+    }
+    .status-btn {
+      padding: 5px 10px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello This is Website</h1>
+
+  <div class="container">
+    <div class="dashboard-header">
+      <h2>📦 Delivery Dashboard</h2>
+      <p>Welcome, Delivery Staff</p>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Address</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#1001</td>
+            <td>Arun Kumar</td>
+            <td>Chennai, 600042</td>
+            <td><span class="badge bg-warning text-dark">Shipped</span></td>
+            <td><button class="btn btn-success btn-sm status-btn">Out for Delivery</button></td>
+          </tr>
+          <tr>
+            <td>#1002</td>
+            <td>Sneha R</td>
+            <td>Coimbatore, 641001</td>
+            <td><span class="badge bg-info text-dark">Out for Delivery</span></td>
+            <td><button class="btn btn-primary btn-sm status-btn">Mark Delivered</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
 </body>
 </html>
